@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">Item Lister <span style="display:none">123</span></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Items</h2>
+            <form class="form-inline mb-3">
+                <input type="text" class="form-control mr-2">
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </ul>
+            <div id="output"></div>
+            <button class="btn btn-dark mt-2" id="remove-button">Click Here</button>
+        </div>
+    </div>
+
+    <style>
+        .mobile_menu_wrapper {
+            background: #f9f9f9;
+        }
+
+        #footer .sidebar_widget.four>li {
+            margin-right: 0;
+        }
+
+        ul.sidebar_widget.four {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .gform_wrapper .top_label input.medium.datepicker,
+        .gform_wrapper .top_label input.small.datepicker {
+            width: 100% !important;
+        }
+
+        .header_cart_wrapper {
+            display: none;
+        }
+
+        .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+            padding: 0 15px !important;
+            height: 47px;
+        }
+
+        .gform_wrapper.gf_browser_chrome select {
+            padding: 0 15px !important;
+            height: 47px;
+        }
+
+
+        .social_wrapper ul li a i,
+        .social_wrapper.small ul li a i {
+            line-height: 18px;
+            font-size: 18px;
+            opacity: 0.4;
+        }
+
+
+        .social_wrapper ul li a i:hover,
+        .social_wrapper.small ul li a i {
+            line-height: 18px;
+            font-size: 18px;
+            opacity: 1;
+        }
+
+        #menu_wrapper .nav ul li a,
+        #menu_wrapper div .nav li>a {
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #666666;
+        }
+
+        #about_the_author {
+            margin-top: 20px;
+            display: none;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .logo_wrapper img {
+                max-width: 175px;
+                height: auto;
+                margin-top: -6px;
+            }
+
+            #mobile_nav_icon {
+                top: 11px;
+            }
+        }
+
+        .cx-footer-about-wrapper {
+            text-align: center;
+        }
+
+        .cx-footer-about {
+            text-align: center;
+        }
+
+        .cx-footer-about a {
+            background: transparent !important;
+            border-color: #222;
+        }
+
+        #portfolio_wall_filters,
+        .portfolio_wall_filters {
+            display: none;
+        }
+
+        .footer_bar_wrapper .social_wrapper ul li a {
+            color: #222;
+            opacity: 1;
+        }
+
+        @media only screen and (max-width: 767px) {
+            #logo_wrapper {
+                padding: 18px 0 0 0;
+            }
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="jsdom.js"></script>
+</body>
+
+</html>
