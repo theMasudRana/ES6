@@ -83,10 +83,13 @@ const form = document.querySelector('form'); */
 /* textInput.addEventListener('keydown', runEven);
 textInput.addEventListener('focus', runEven);
 textInput.addEventListener('blur', runEven); */
-const tt = document.querySelector('.custom-select');
+/* const tt = document.querySelector('.custom-select');
 tt.addEventListener('change', runEven);
 
 function runEven(e) {
   console.log(e.type);
   console.log(e.target.value);
-}
+} */
+
+var str = "I am a \"double quoted\" string inside \"double quotes\"";
+console.log(str);
