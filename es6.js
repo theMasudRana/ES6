@@ -119,7 +119,7 @@ Arrow Functions
 // syntex
 // () => {}
 // Spread operator in function
-function add(...nums) {
+/* function add(...nums) {
     let total = nums.reduce((x, y) => x + y);
     console.log(total);
 }
@@ -130,20 +130,33 @@ const materials = [
     'Water',
     'Fire',
     'Gas'
-];
+]; */
 // Standard example
-const mat1 = materials.map(function (material) {
+/* const mat1 = materials.map(function (material) {
     return material.length;
 });
 
-console.log(mat1);
+console.log(mat1); */
 
 // Arrow function extended
-const mat2 = materials.map((material) => {
+/* const mat2 = materials.map((material) => {
     return material.length;
 });
-console.log(mat2);
+console.log(mat2); */
 
 // Arrow function shorters
-const mat3 = materials.map(material => material.length);
+/* const mat3 = materials.map(material => material.length);
 console.log(mat3); 
+
+const newArr = [1,2,3];
+console.log(newArr.includes(3)); */
+
+/* ---------------------------
+Import Export
+------------------------------ */
+
+/* import { data } from './example-data.js';
+const myData = data;
+myData.push(9)
+console.log(myData);
+ */
