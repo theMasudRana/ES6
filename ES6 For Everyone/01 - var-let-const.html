@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Var Let Const</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Hi I am learning ES6</h1>
+
+
+
+    <script>
+        /* 
+        --------------------------------------
+        VAR
+        var variable can be reassigned
+        -------------------------------------- 
+        */
+
+        var width = 100; //Var assigned 100 as it's value
+
+        console.log(width);
+
+        var width = 200; // Width is reassigned with global scope
+        console.log(width);
+
+
+        // Var is function scope (it's value will be available inside the function)
+
+        function setWidth() {
+            var newWidth = 500;
+            console.log(newWidth);
+
+        }
+        setWidth();
+
+        //console.log(newWidth); // This will through referenceError because new width is scoped with setWidth function
+
+
+
+        /* 
+        --------------------------------------
+        LET
+        let variable is block scoped and it can be updated
+        -------------------------------------- 
+        */
+
+        let points = 50;
+        let winner = false;
+        // Updatable
+        points = 70; // this will change the value of points because let variables are updatable
+        //let points = 60; // this will give a syntaxerror because let is already been defined
+
+
+        console.log(points);
+
+
+        if (points > 30) {
+            let winner = true;
+            console.log(winner);
+        }
+
+        console.log(
+        winner); //This line will give a result of winner is false because the winner variable is scoped differently. Inside the statement it's true but it's false in the global scope.
+
+        /* 
+        --------------------------------------
+        CONST
+        const variable is not changeable 
+        -------------------------------------- 
+        */
+
+        const key = 'abc123';
+        console.log(key);
+
+        //key = 'something else'; // this will give a typeError because const variable can not be updated
+
+        const person = {
+            name: 'Masud',
+            age: 24
+        }
+
+        // This block will give an error because it can not update the object because it's defined by const
+
+        /*         
+            person = {
+                name: 'Rana'
+            }
+            console.log(person); 
+        */
+
+        // But attribute of this object can be change
+        person.age = 25;
+        console.log(person); // Not the person objects age property will set to 25
+
+
+
+    </script>
+
+</body>
+
+</html>

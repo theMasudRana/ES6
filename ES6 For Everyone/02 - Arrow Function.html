@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <h1>Hi I am learning ES6 Arrow Functuon</h1>
+
+    <script>
+        /* 
+        --------------------------------------
+        Arrow function
+        -------------------------------------- 
+        */
+        const names = ['Masud', 'Mamun', 'Hasan', 'Sahan'];
+
+        const fullName = names.map(function (name) {
+            return `${name} Ali`;
+        });
+        console.log(fullName);
+        // Remove the word function and add a fat arrow after the parameter
+        const fullName2 = names.map((name) => {
+            return `${name} Ali`;
+        });
+        console.log(fullName2);
+        // IF you have just one parameter remove the parenthesis around it
+        const fullName3 = names.map(name => {
+            return `${name} Ali`;
+        });
+        console.log(fullName3);
+        // Implicit return
+        const fullName4 = names.map(name => `${name} Ali`);
+        console.log(fullName4);
+
+        // if there is no argument then just add a parenthesis
+        const fullName5 = names.map(() => `Awesome Ali`);
+
+        console.log(fullName5);
+
+        /* 
+        --------------------------------------
+        Arrow function examples implicit return with object
+        -------------------------------------- 
+        */
+
+        const race = '100m Dash';
+        const winners = ['Masud Rana', 'Asad Ali', 'Kuppa Samsu', 'Rubel Rana', 'Atik Israk'];
+
+        const win = winners.map((winner, i) => ({
+            name: winner,
+            race,
+            place: i + 1
+        }));
+        console.table(win);
+
+
+        /* 
+        --------------------------------------
+        Arrow function examples implicit return with object
+        -------------------------------------- 
+        */
+
+        const ages = [10, 42, 2, 60, 50, 66, 78, 280];
+
+        const old = ages.filter(age => age >= 20);
+        console.log(old);
+        
+         
+
+    </script>
+
+</body>
+
+</html>
